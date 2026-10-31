@@ -1,0 +1,7 @@
+{
+  "name": "semiologia-locomotor-interativa",
+  "version": "1.6.1",
+  "private": true,
+  "description": "Revisão local da aula de Semiologia do Sistema Locomotor",
+  "scripts": {"build": "node scripts/build.cjs", "build:offline": "node scripts/build.cjs", "build:all": "node scripts/build.cjs"}
+}
