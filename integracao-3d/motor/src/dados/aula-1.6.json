@@ -1,0 +1,256 @@
+{
+ "fonte": "Conteúdo aprovado da aula 1.6.0/1.6.1 (sim/testes.js REG.ombro e sim/movimentos.js MOV), copiado sem alteração",
+ "testesOmbro": [
+  {
+   "n": "Arco doloroso",
+   "fin": "Rastrear doença do manguito rotador e da bolsa subacromial, comprimidos sob o arco coracoacromial na faixa média da abdução.",
+   "cena": "arco",
+   "foto": {
+    "f": "om16-arco-doloroso.webp",
+    "alt": "Paciente de pé, de frente, com o braço direito abduzido a cerca de 90 graus; a examinadora, ao lado e atrás, apoia a mão sobre o ombro"
+   },
+   "cap": "Abdução ativa observada de frente; a dor no meio do arco, e não no fim, é o achado.",
+   "tec": "Abduza o braço do paciente de 0° a 180°, de frente para ele.",
+   "pos": "Dor entre 60° e 120°.",
+   "sug": "Manguito rotador e bolsa subacromial.",
+   "num": "RV positiva 3,7, a maior entre as manobras do manguito; RV negativa 0,36 (Bates)."
+  },
+  {
+   "n": "Sinal de Neer",
+   "fin": "Provocar a compressão das estruturas subacromiais: a tuberosidade maior contra o acrômio.",
+   "cena": "neer",
+   "foto": {
+    "f": "om11-neer-v2.webp",
+    "alt": "Paciente sentada de perfil; a examinadora, atrás, estabiliza a escápula com uma mão e eleva o braço da paciente em flexão com a outra"
+   },
+   "cap": "Elevação passiva: a examinadora conduz o braço e impede o movimento da escápula.",
+   "tec": "Uma mão impede o movimento da escápula; a outra eleva passivamente o braço em flexão até o fim.",
+   "pos": "Dor no ombro durante a elevação.",
+   "sug": "Compressão da tuberosidade maior contra o acrômio: tendinite do manguito, compressão subacromial.",
+   "num": "RV positiva de 1,0 a 1,6; com Neer e Hawkins ausentes, a RV negativa é 0,1 (Bates)."
+  },
+  {
+   "n": "Sinal de Hawkins",
+   "fin": "Provocar a compressão do supraespinal sob o arco coracoacromial.",
+   "cena": "hawkins",
+   "foto": {
+    "f": "om17b-hawkins.webp",
+    "alt": "Paciente sentada, de perfil direito; braço direito fletido a 90 graus para a frente, cotovelo a 90 graus e antebraço girado para baixo; a examinadora apoia o cotovelo e empurra o antebraço distal para baixo"
+   },
+   "cap": "Ombro e cotovelo a 90°; a examinadora sustenta o cotovelo e leva o antebraço para baixo (rotação interna).",
+   "tec": "Ombro e cotovelo a 90°, palma para baixo. Com uma mão no antebraço e outra no braço, faça a rotação interna.",
+   "pos": "Dor durante a rotação interna.",
+   "sug": "Compressão do supraespinal sob o arco coracoacromial.",
+   "num": "RV positiva em torno de 1,5 (Bates)."
+  },
+  {
+   "n": "Teste da lata vazia",
+   "fin": "Testar o supraespinal: dor ou fraqueza contra resistência.",
+   "cena": "lata",
+   "foto": {
+    "f": "om10-lata-vazia-v2.webp",
+    "alt": "Paciente de pé com os braços elevados lateralmente, polegares para baixo; a examinadora, atrás, apoia as mãos nos dois antebraços"
+   },
+   "cap": "Polegares para baixo; a examinadora empurra os dois antebraços para baixo.",
+   "tec": "Braços elevados a 90° com rotação interna, polegares para baixo, como quem esvazia uma lata. O paciente resiste enquanto você empurra os braços para baixo.",
+   "pos": "Dor ou fraqueza ao resistir.",
+   "sug": "Supraespinal. Em Bates, dor nas manobras compostas sugere doença do manguito ou capsulite adesiva.",
+   "num": ""
+  },
+  {
+   "n": "Queda do braço",
+   "fin": "Pesquisar ruptura do manguito rotador, sobretudo do supraespinal.",
+   "cena": "queda",
+   "foto": {
+    "f": "om18-queda-braco.webp",
+    "alt": "Paciente de pé, de frente, abaixando lentamente o braço direito a partir da abdução; a examinadora observa ao lado"
+   },
+   "cap": "O braço desce devagar e controlado a partir de 90°: resposta normal.",
+   "tec": "O paciente abduz o braço até 90° e o abaixa lentamente.",
+   "pos": "O braço cai ou não desce de forma controlada.",
+   "sug": "Ruptura do manguito rotador (supraespinal).",
+   "num": ""
+  }
+ ],
+ "movimentos": [
+  {
+   "k": "ombroFlex",
+   "art": "Ombro",
+   "nome": "Flexão do ombro",
+   "plano": "Sagital",
+   "max": 180,
+   "val": "180°",
+   "fonte": "Bates",
+   "instr": "“Levante seus braços à frente e acima da cabeça.”"
+  },
+  {
+   "k": "ombroExt",
+   "art": "Ombro",
+   "nome": "Extensão do ombro",
+   "plano": "Sagital",
+   "max": 60,
+   "val": "60°",
+   "fonte": "Bates",
+   "instr": "“Leve seus braços para trás.”"
+  },
+  {
+   "k": "ombroAbd",
+   "art": "Ombro",
+   "nome": "Abdução do ombro",
+   "plano": "Frontal",
+   "max": 180,
+   "val": "180°",
+   "fonte": "Bates",
+   "instr": "“Levante seus braços para o lado e acima da cabeça.”",
+   "nota": "Até cerca de 90° predomina a glenoumeral; acima disso, a escápula gira sobre o tórax."
+  },
+  {
+   "k": "ombroRE",
+   "art": "Ombro",
+   "nome": "Rotação externa do ombro",
+   "plano": "Transversal (medida com abdução de 90°)",
+   "max": 90,
+   "val": "90°",
+   "fonte": "ABD",
+   "instr": "“Levante os braços até o nível do ombro; dobre o cotovelo e rode seu antebraço em direção ao teto.”",
+   "nota": "Com o braço a 90° e o cotovelo a 90°, o antebraço aponta para a frente (0°) e sobe na rotação externa."
+  },
+  {
+   "k": "ombroRI",
+   "art": "Ombro",
+   "nome": "Rotação interna do ombro",
+   "plano": "Transversal (medida com abdução de 90°)",
+   "max": 80,
+   "val": "80°",
+   "fonte": "ABD",
+   "instr": "Na mesma posição, rode o antebraço em direção ao chão. Teste funcional (Bates): “Coloque uma das mãos nas costas e toque sua escápula.”"
+  },
+  {
+   "k": "cotFlex",
+   "art": "Cotovelo",
+   "nome": "Flexão do cotovelo",
+   "plano": "Sagital",
+   "max": 150,
+   "val": "150°",
+   "fonte": "ABD",
+   "instr": "“Dobre seu cotovelo.”",
+   "nota": "Extensão completa = 0°. Falta de extensão é registrada em graus negativos (ex.: −20°)."
+  },
+  {
+   "k": "sup",
+   "art": "Antebraço",
+   "nome": "Supinação",
+   "plano": "Rotação do antebraço (cotovelo a 90°)",
+   "max": 90,
+   "val": "90°",
+   "fonte": "ABD",
+   "instr": "“Gire as palmas das mãos para cima, como se estivesse carregando uma tigela de sopa.”",
+   "dial": true
+  },
+  {
+   "k": "pro",
+   "art": "Antebraço",
+   "nome": "Pronação",
+   "plano": "Rotação do antebraço (cotovelo a 90°)",
+   "max": 80,
+   "val": "80°",
+   "fonte": "ABD",
+   "instr": "“Vire a palma de suas mãos para baixo.”",
+   "dial": true
+  },
+  {
+   "k": "punExt",
+   "art": "Punho",
+   "nome": "Extensão do punho",
+   "plano": "Sagital",
+   "max": 80,
+   "val": "70° (Bates) a 90° (ABD)",
+   "fonte": "Bates; ABD",
+   "instr": "“Com a palma de suas mãos para baixo, aponte seus dedos para o teto.”"
+  },
+  {
+   "k": "punFlex",
+   "art": "Punho",
+   "nome": "Flexão do punho",
+   "plano": "Sagital",
+   "max": 80,
+   "val": "80°",
+   "fonte": "Bates; ABD",
+   "instr": "“Com a palma de suas mãos para baixo, aponte seus dedos para o chão.”"
+  },
+  {
+   "k": "desRad",
+   "art": "Punho",
+   "nome": "Desvio radial do punho",
+   "plano": "Frontal (palma para baixo)",
+   "max": 20,
+   "val": "20°",
+   "fonte": "Bates",
+   "instr": "Com a palma para baixo, peça que incline a mão para o lado do polegar.",
+   "nota": "O ABD traz outro valor: 45° de desvio radial."
+  },
+  {
+   "k": "desUln",
+   "art": "Punho",
+   "nome": "Desvio ulnar do punho",
+   "plano": "Frontal (palma para baixo)",
+   "max": 30,
+   "val": "30°",
+   "fonte": "Bates; ABD",
+   "instr": "Com a palma para baixo, peça que incline a mão para o lado do dedo mínimo."
+  },
+  {
+   "k": "quaFlex",
+   "art": "Quadril",
+   "nome": "Flexão do quadril",
+   "plano": "Sagital",
+   "max": 120,
+   "val": "120° (joelho fletido)",
+   "fonte": "Bates",
+   "instr": "“Coloque seu joelho no peito e puxe-o contra o abdome.” (deitado de costas)"
+  },
+  {
+   "k": "quaAbd",
+   "art": "Quadril",
+   "nome": "Abdução do quadril",
+   "plano": "Frontal",
+   "max": 45,
+   "val": "45°",
+   "fonte": "Bates",
+   "instr": "“Deitado de costas, afaste a perna da linha média.”",
+   "nota": "Uma mão na espinha ilíaca anterossuperior percebe quando a pelve começa a se mover (ABD)."
+  },
+  {
+   "k": "quaAdu",
+   "art": "Quadril",
+   "nome": "Adução do quadril",
+   "plano": "Frontal",
+   "max": 20,
+   "val": "20°",
+   "fonte": "Bates",
+   "instr": "Deitado de costas, leve a perna em direção à linha média, cruzando sobre a outra."
+  },
+  {
+   "k": "joeFlex",
+   "art": "Joelho",
+   "nome": "Flexão do joelho",
+   "plano": "Sagital",
+   "max": 130,
+   "val": null,
+   "fonte": "",
+   "instr": "“Dobre ou flexione o joelho.” OU “Agache-se no chão.”",
+   "nota": "Extensão completa = 0°; hiperextensão é o joelho recurvado."
+  },
+  {
+   "k": "colFlex",
+   "art": "Coluna lombar",
+   "nome": "Flexão da coluna",
+   "plano": "Sagital",
+   "max": 90,
+   "val": null,
+   "fonte": "",
+   "instr": "“Incline-se para frente e tente tocar nos dedos dos pés.”",
+   "nota": "Observe a uniformidade e a simetria: a concavidade lombar deve se retificar."
+  }
+ ]
+}

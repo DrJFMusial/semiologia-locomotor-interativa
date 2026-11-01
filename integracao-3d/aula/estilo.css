@@ -1,0 +1,124 @@
+/* Integração 3D experimental: herda os tokens da aula (claro e escuro). Prefixo l3d-. */
+/* Com WebGL, os esquemas corporais da aula não aparecem: o modelo 3D ocupa o lugar deles. */
+html.l3d-ativo :is(.mv-svg, .om-svg, .an-svg, .fc-svg, .mk-svg-pv, .mk-svg-pe, svg.dj-svg:has(> .dj-sag), svg.gl-svg[aria-label^="Manequim"], svg.ct-svg[aria-label^="Ângulo de carregamento"], svg.ct-svg[aria-label^="Cotovelo direito visto por trás"]):not(.l3d-mostrar) { visibility: hidden; }
+.l3d-oculto { display: none !important; }
+.l3d-bloco { display: none; }
+.l3d-host.l3d-on > .l3d-bloco { display: flex; flex-direction: column; align-items: stretch; min-width: 0; width: 100%; flex: 1 1 auto; }
+.l3d-palco { display: block; }
+.l3d-barra { display: flex; }
+.l3d-legenda:empty { display: none; }
+html.l3d-sem-webgl .l3d-bloco { display: none !important; }
+.mv-fig.l3d-host { flex-direction: column; align-items: stretch; min-width: 0; }
+.l3d-palco { position: relative; flex: 1 1 auto; min-height: 240px; min-width: 0; width: 100%; border-radius: 12px;
+  background: radial-gradient(ellipse at 50% 40%, var(--surface, #fff), var(--paper-2, #f2f5f7)); overflow: hidden; }
+.l3d-palco.l3d-proporcao { flex: 0 0 auto; min-height: 200px; max-height: 72vh; }
+.l3d-cena { position: absolute; inset: 0; }
+.l3d-cv { position: absolute; inset: 0; width: 100%; height: 100%; display: block; outline: none; }
+.l3d-ov { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.l3d-foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.l3d-foto[hidden] { display: none; }
+.l3d-espera { position: absolute; inset: 0; margin: 0; display: grid; place-items: center; font-size: 13px; color: var(--ink-3, #6b7d89); letter-spacing: .02em; }
+.l3d-dono .l3d-espera, .l3d-palco:has(.l3d-foto:not([hidden])) .l3d-espera { display: none; }
+.l3d-dono .l3d-ovfoto, .l3d-palco:has(.l3d-foto[hidden]) .l3d-ovfoto { display: none; }
+.l3d-legenda { display: block; margin: 4px 6px 0; font-size: 13px; line-height: 1.35; color: var(--ink-2, #3b4f5c); text-align: center; }
+.l3d-tag { position: absolute; left: 8px; bottom: 6px; right: 8px; width: fit-content; max-width: calc(100% - 16px); margin: 0; padding: 2px 8px; border-radius: 10px; font-size: 12px; line-height: 1.3;
+  background: color-mix(in srgb, var(--surface, #fff) 82%, transparent); color: var(--ink-3, #6b7d89); border: 1px solid var(--line, #dbe3e8); }
+.l3d-barra { flex-wrap: wrap; gap: 6px 10px; align-items: center; justify-content: center; padding: 6px 2px 2px; }
+.l3d-g { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; }
+.l3d-barra .btn { font-size: 13px; padding: 4px 9px; min-height: 30px; }
+.l3d-barra .an-b { width: 34px; padding: 4px; justify-content: center; }
+.l3d-barra .an-b svg { width: 18px; height: 18px; }
+.l3d-rng { width: 120px; accent-color: var(--petrol, #0e5462); }
+/* indicadores sobre a cena (goniômetro, dor, linhas de referência), nas cores da aula */
+.l3d-ov .g-arm { stroke: var(--petrol, #0e5462); stroke-width: 3; stroke-linecap: round; }
+.l3d-ov .g-arm.mv { stroke: var(--petrol-2, #157383); }
+.l3d-ov .g-arc { fill: none; stroke: var(--petrol, #0e5462); stroke-width: 2.5; }
+.l3d-ov .g-eixo { fill: var(--surface, #fff); stroke: var(--petrol, #0e5462); stroke-width: 3; }
+.l3d-ov .t { font: 600 15px var(--font, system-ui); fill: var(--ink, #10212b); paint-order: stroke; stroke: var(--surface, #fff); stroke-width: 4px; }
+.l3d-ov .t.gn { fill: var(--petrol, #0e5462); font-size: 17px; }
+.l3d-ov .t.pain { fill: var(--art, #c3323c); font-size: 18px; }
+.l3d-ov .t.aviso { fill: var(--ink-3, #6b7d89); font-size: 13px; font-weight: 500; }
+.l3d-ov .t.rot, .l3d-ov .pt-t, .l3d-ov .ln-t { font-size: 13px; font-weight: 600; }
+.l3d-ov .rot-l { stroke: var(--ink-3, #6b7d89); stroke-width: 1.2; }
+.l3d-ov .band { fill: none; stroke: var(--art-soft, #f6dfe0); stroke-width: 9; }
+.l3d-ov .band.on { stroke: var(--art, #c3323c); }
+.l3d-ov .band-ok { fill: none; stroke: var(--ok-soft, #dff1e8); stroke-width: 9; }
+.l3d-ov .ln { fill: none; stroke: var(--petrol, #0e5462); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.l3d-ov .ln.prumo { stroke: var(--ink-2, #3b4f5c); stroke-dasharray: 6 5; stroke-width: 1.6; }
+.l3d-ov .ln.nivel { stroke: var(--petrol-2, #157383); stroke-width: 2; }
+.l3d-ov .ln.ref { stroke: var(--ink-3, #6b7d89); stroke-dasharray: 4 5; stroke-width: 1.4; }
+.l3d-ov .ln.traj { stroke: var(--petrol-2, #157383); stroke-dasharray: 3 5; stroke-width: 2; }
+.l3d-ov .ln.chao { stroke: var(--ink-3, #6b7d89); stroke-width: 2; }
+.l3d-ov .ln.eixo { stroke: var(--petrol, #0e5462); stroke-width: 2.5; stroke-dasharray: 8 5; }
+.l3d-ov .ln.eixo.mv { stroke: var(--petrol-2, #157383); }
+.l3d-ov .ln.nervo { stroke: #c9a227; stroke-width: 3.5; }
+.l3d-ov .ln.nervo.tenso { stroke: var(--art, #c3323c); }
+.l3d-ov .pt { fill: var(--surface, #fff); stroke: var(--petrol, #0e5462); stroke-width: 2.5; }
+.l3d-ov .pt.dor { fill: color-mix(in srgb, var(--art, #c3323c) 25%, transparent); stroke: var(--art, #c3323c); }
+.l3d-ov .pt.pulso { fill: color-mix(in srgb, var(--art, #c3323c) 22%, transparent); stroke: var(--art, #c3323c); stroke-width: 1.5; }
+.l3d-ov .poli { fill: color-mix(in srgb, var(--petrol, #0e5462) 10%, transparent); stroke: var(--petrol, #0e5462); stroke-width: 2; stroke-dasharray: 5 4; }
+.l3d-ov .faixa-erro { fill: color-mix(in srgb, var(--surface, #fff) 85%, transparent); }
+/* dimensões por tela */
+.te-anim.l3d-host { min-height: 0; }
+:is(.te-anim, .at2-anim, .ddq-anim).l3d-host .l3d-palco { min-height: 300px; border-radius: 0; }
+.te-anim.l3d-host .l3d-barra { padding: 2px 6px 6px; }
+.om-left.l3d-host .l3d-palco { min-height: 260px; }
+body.modo-estudo .l3d-palco { min-height: 300px; max-height: 560px; }
+@media (max-width: 700px) { .l3d-barra .btn { font-size: 12px; padding: 3px 7px; } .l3d-rng { width: 90px; } .l3d-palco { min-height: 240px; } }
+.l3d-cred { position: absolute; right: 8px; top: 4px; margin: 0; font-size: 10px; color: var(--ink-3, #6b7d89); opacity: .8; pointer-events: none; }
+html[data-l3d-qualidade="0"] .l3d-barra [aria-label^="Alternar entre esqueleto"] { display: none; }
+
+/* ---------- capa: esqueleto em traço e arco de 0° a 180° pelo slide (2D, sem WebGL) ---------- */
+.s-capa { isolation: isolate; }
+.s-capa .cp-svg { visibility: hidden; }
+.cpx { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; overflow: visible; }
+.cpx-osso { fill: color-mix(in srgb, var(--surface, #fff) 55%, transparent); stroke: var(--ink-3, #6b7d89); stroke-width: 1.1; stroke-linejoin: round; opacity: .85; }
+.cpx-osso.mv { stroke: var(--petrol, #0e5462); stroke-width: 1.8; opacity: 1; fill: color-mix(in srgb, var(--petrol, #0e5462) 7%, var(--surface, #fff)); }
+.cpx-arco { fill: none; stroke: var(--line, #dbe3e8); stroke-width: 1.4; }
+.cpx-tick { stroke: var(--line, #dbe3e8); stroke-width: 1.2; }
+.cpx-tick.forte { stroke: var(--ink-3, #6b7d89); opacity: .55; stroke-width: 1.4; }
+.cpx-num { font: 600 13px var(--font, system-ui); fill: var(--ink-3, #6b7d89); opacity: .7; }
+.cpx-prog { fill: none; stroke: var(--petrol, #0e5462); stroke-width: 3; stroke-linecap: round; opacity: .55; }
+.cpx-raio { stroke: var(--petrol, #0e5462); stroke-width: 1.2; stroke-dasharray: 3 7; opacity: .45; }
+.cpx-ponto { fill: var(--petrol, #0e5462); opacity: .8; }
+.cpx-arcof { fill: none; stroke: var(--petrol-2, #157383); stroke-width: 2; }
+.cpx-graus { font: 700 17px var(--font, system-ui); fill: var(--petrol, #0e5462); }
+.cpx-fase { font: 600 16px var(--font, system-ui); fill: var(--ink-3, #6b7d89); }
+@media (prefers-reduced-motion: reduce) { .cpx-raio { display: none; } }
+/* ---------- Ortolani e Barlow: só as fotos, com setas ---------- */
+html.ddqx-on [data-component="ddq"] .ddq-anim .an-svg { display: none !important; }
+html.ddqx-on [data-component="ddq"] .ddq-anim .l3d-bloco { display: none !important; }
+html.ddqx-on .cc-ddq-sequencia img { max-height: 430px; width: 100%; object-fit: contain; display: block; }
+.ddqx-foto { position: relative; }
+.ddqx-setas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.ddqx-seta { fill: none; stroke: var(--exam, #6f4bb0); stroke-width: 9; stroke-linecap: round; }
+.ddqx-seta.pressao { stroke-dasharray: 18 12; }
+#ddqx-ponta path { fill: var(--exam, #6f4bb0); }
+.ddqx-est { fill: none; stroke: var(--petrol, #0e5462); stroke-width: 5; stroke-dasharray: 14 10; opacity: .8; }
+.ddqx-t { font: 700 34px var(--font, system-ui); fill: var(--exam, #6f4bb0); paint-order: stroke; stroke: #fff; stroke-width: 8px; }
+.ddqx-t.fraco { fill: var(--petrol, #0e5462); font-weight: 600; font-size: 30px; }
+/* ---------- espaços de imagem (inspeção estática, derrame, atlas) ---------- */
+.imgx-oculto { display: none !important; }
+.imgx { position: relative; width: 100%; }
+.imgx img { display: block; width: 100%; height: auto; max-height: var(--imgx-h, 640px); object-fit: contain; border-radius: 10px; background: #fff; }
+.imgx-ov { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.imgx-prumo { stroke: var(--ink-2, #3b4f5c); stroke-width: 2; stroke-dasharray: 6 5; vector-effect: non-scaling-stroke; }
+.imgx-nivel { stroke: var(--petrol-2, #157383); stroke-width: 2; stroke-dasharray: 10 6; vector-effect: non-scaling-stroke; }
+.imgx-t { font: 600 26px var(--font, system-ui); fill: var(--petrol, #0e5462); }
+/* ---------- anatomia funcional: imagem (ou esquema) e atlas 3D lado a lado ---------- */
+.at2-fig.at2-com3d { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.at2-fig.at2-com3d > .at2-svg, .at2-fig.at2-com3d > .imgx { grid-column: 1; }
+.at2-3d { grid-column: 2; min-width: 0; display: flex; flex-direction: column; }
+.at2-3d .l3d-palco { min-height: 380px; }
+html.l3d-sem-webgl .at2-3d { display: none; }
+@media (max-width: 900px) { .at2-fig.at2-com3d { grid-template-columns: 1fr; } .at2-3d { grid-column: 1; } }
+html.ddqx-on .ddq:has(.cc-ddq-sequencia) { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); grid-template-rows: auto auto auto 1fr; }
+html.ddqx-on .ddq:has(.cc-ddq-sequencia) .ddq-top { grid-column: 1; grid-row: 1; }
+html.ddqx-on .ddq:has(.cc-ddq-sequencia) .cc-ddq-sequencia { grid-column: 1; grid-row: 2; margin: 0; }
+html.ddqx-on .ddq:has(.cc-ddq-sequencia) .ddq-anim { grid-column: 1; grid-row: 3; min-height: 0; }
+html.ddqx-on .ddq:has(.cc-ddq-sequencia) .ddq-info { grid-column: 2; grid-row: 1 / span 4; }
+html.ddqx-on body.modo-estudo .ddq:has(.cc-ddq-sequencia) { display: flex; flex-direction: column; }
+html.ddqx-on .cc-ddq-sequencia figcaption { margin-top: 6px; }
+.cpx { overflow: hidden; }
+.cpx-eco { fill: none; stroke: var(--line, #dbe3e8); stroke-width: 1; opacity: .7; }
+.cpx-tick.eco { stroke: var(--line, #dbe3e8); opacity: .8; }

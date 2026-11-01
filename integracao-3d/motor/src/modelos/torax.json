@@ -1,0 +1,20 @@
+{
+ "fonte": "ajuste geom\u00e9trico \u00e0 face externa posterolateral das costelas 1 a 9, simetria em X = 0",
+ "centro": [
+  0.0,
+  1.26324,
+  -0.01347
+ ],
+ "raios": [
+  0.14273,
+  0.17925,
+  0.08381
+ ],
+ "rms_mm": 11.3,
+ "p90_mm": 17.0,
+ "n": 590,
+ "faixa_y": [
+  1.171,
+  1.442
+ ]
+}

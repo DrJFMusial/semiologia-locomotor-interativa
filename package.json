@@ -1,7 +1,12 @@
 {
   "name": "semiologia-locomotor-interativa",
-  "version": "1.6.1",
+  "version": "1.8.1",
   "private": true,
-  "description": "Revisão local da aula de Semiologia do Sistema Locomotor",
-  "scripts": {"build": "node scripts/build.cjs", "build:offline": "node scripts/build.cjs", "build:all": "node scripts/build.cjs"}
+  "description": "Aula interativa de Semiologia do Sistema Locomotor com anatomia 3D",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "build:offline": "node scripts/build.cjs",
+    "build:all": "node scripts/build.cjs",
+    "test": "node integracao-3d/motor/test/cinematica.test.mjs && node integracao-3d/motor/test/geometria.test.mjs && node integracao-3d/motor/test/cenas.test.mjs"
+  }
 }

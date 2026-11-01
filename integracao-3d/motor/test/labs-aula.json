@@ -1,0 +1,579 @@
+{
+ "Arco doloroso: abdução de 0 a 180 graus com dor entre 60 e 120 graus": {
+  "dur": 7000,
+  "fases": [
+   [
+    0,
+    "Posição inicial: braço ao lado do corpo, de frente para o examinador"
+   ],
+   [
+    0.08,
+    "Abdução no plano frontal, de 0° para cima"
+   ],
+   [
+    0.35,
+    "Entre 60° e 120°: dor = arco doloroso"
+   ],
+   [
+    0.6,
+    "Acima de 120°: a dor diminui ou cede"
+   ],
+   [
+    0.92,
+    "Registre o ângulo em que a dor começa e termina"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Ortolani: abdução da coxa fletida com elevação do trocanter; a cabeça do fêmur luxada volta ao acetábulo com um ressalto": {
+  "dur": 7500,
+  "fases": [
+   [
+    0,
+    "Quadril e joelho a 90°, coxa na linha média; um quadril de cada vez"
+   ],
+   [
+    0.12,
+    "Dedos indicador e médio sobre o trocanter maior; a outra mão estabiliza a pelve"
+   ],
+   [
+    0.25,
+    "Abdução suave da coxa fletida, pressionando o trocanter para a frente"
+   ],
+   [
+    0.55,
+    "Ressalto palpável: a cabeça luxada volta ao acetábulo = Ortolani positivo"
+   ],
+   [
+    0.85,
+    "Comparação: no quadril normal não há ressalto; a cena ilustra um teste positivo"
+   ]
+  ],
+  "comp": "ddq",
+  "regioes": ""
+ },
+ "Sinal de Neer: elevação passiva em flexão com a escápula fixada": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Posição inicial: braço ao lado do corpo"
+   ],
+   [
+    0.1,
+    "Uma mão fixa a escápula (impede a elevação do ombro)"
+   ],
+   [
+    0.25,
+    "A outra conduz o braço em flexão passiva até o fim"
+   ],
+   [
+    0.85,
+    "Dor no ombro durante a elevação = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Sinal de Hawkins: ombro e cotovelo a 90 graus, rotação interna forçada": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Ombro fletido a 90° para a frente, cotovelo a 90°"
+   ],
+   [
+    0.15,
+    "Uma mão sustenta o cotovelo"
+   ],
+   [
+    0.3,
+    "A outra gira o antebraço para baixo: rotação interna"
+   ],
+   [
+    0.85,
+    "Dor no ombro = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste da lata vazia: braços a 90 graus, polegares para baixo, resistência à força para baixo": {
+  "dur": 5500,
+  "fases": [
+   [
+    0,
+    "Braços elevados a 90°, um pouco à frente (plano da escápula)"
+   ],
+   [
+    0.15,
+    "Rotação interna: polegares para baixo, como quem esvazia uma lata"
+   ],
+   [
+    0.35,
+    "O examinador empurra os antebraços para baixo; o paciente resiste"
+   ],
+   [
+    0.8,
+    "Dor ou fraqueza ao resistir = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste da queda do braço: abaixar devagar a partir de 90 graus": {
+  "dur": 6500,
+  "fases": [
+   [
+    0,
+    "O paciente abduz o braço até 90°"
+   ],
+   [
+    0.2,
+    "Pede-se que abaixe devagar"
+   ],
+   [
+    0.3,
+    "Normal: desce de forma controlada"
+   ],
+   [
+    0.85,
+    "Positivo: o braço cai ou não consegue descer controlado"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Phalen: dorso contra dorso, punhos em flexão de 90 graus por 60 segundos": {
+  "dur": 6500,
+  "fases": [
+   [
+    0,
+    "Antebraços horizontais, punhos retos"
+   ],
+   [
+    0.12,
+    "Os punhos se fletem e os dorsos das mãos se encostam"
+   ],
+   [
+    0.55,
+    "Manter por 60 segundos"
+   ],
+   [
+    0.85,
+    "Formigamento no território do mediano = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Sinal de Tinel: percussão leve sobre o túnel do carpo": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Antebraço apoiado, palma para cima"
+   ],
+   [
+    0.12,
+    "Percussão leve sobre o túnel do carpo, repetida"
+   ],
+   [
+    0.6,
+    "Formigamento irradiado para o território do mediano = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Finkelstein: mão fechada sobre o polegar e desvio ulnar": {
+  "dur": 7000,
+  "fases": [
+   [
+    0,
+    "Antebraço em posição neutra, polegar para cima (vista do dorso)"
+   ],
+   [
+    0.1,
+    "1. O paciente fecha a mão sobre o polegar"
+   ],
+   [
+    0.38,
+    "2. O examinador fixa o antebraço e inclina o punho para o lado ulnar"
+   ],
+   [
+    0.8,
+    "Dor sobre o estiloide radial = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Phalen invertido: palmas unidas, punhos em extensão por 60 segundos": {
+  "dur": 6500,
+  "fases": [
+   [
+    0,
+    "Antebraços horizontais, punhos retos"
+   ],
+   [
+    0.12,
+    "Palma contra palma, dedos para cima: os punhos se estendem"
+   ],
+   [
+    0.55,
+    "Manter por 60 segundos (extensão aumenta a pressão no túnel do carpo)"
+   ],
+   [
+    0.85,
+    "Formigamento no território do mediano = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Durkan: compressão direta do túnel do carpo com os polegares": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Antebraço apoiado, palma para cima"
+   ],
+   [
+    0.12,
+    "Os dois polegares comprimem a base da palma, logo distal à prega do punho"
+   ],
+   [
+    0.3,
+    "Manter a pressão por até 30 segundos"
+   ],
+   [
+    0.8,
+    "Formigamento no território do mediano = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Allen: compressão das artérias radial e ulnar e liberação da ulnar": {
+  "dur": 9000,
+  "fases": [
+   [
+    0,
+    "Palma para cima; artéria radial (lado do polegar) e ulnar (lado do mínimo)"
+   ],
+   [
+    0.1,
+    "O examinador comprime as duas artérias no punho"
+   ],
+   [
+    0.2,
+    "O paciente abre e fecha a mão algumas vezes: a palma empalidece"
+   ],
+   [
+    0.5,
+    "O examinador libera uma artéria (aqui, a ulnar)"
+   ],
+   [
+    0.62,
+    "A cor volta logo: artéria liberada pérvia (normal)"
+   ],
+   [
+    0.88,
+    "Sem reperfusão = positivo. Repita liberando a outra artéria"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Spurling: extensão e rotação da cabeça, compressão axial, dor irradiada": {
+  "dur": 6500,
+  "fases": [
+   [
+    0,
+    "Paciente sentado, cabeça neutra"
+   ],
+   [
+    0.1,
+    "Olha sobre o ombro (rotação) e para o teto (extensão)"
+   ],
+   [
+    0.4,
+    "O examinador comprime o alto da cabeça para baixo"
+   ],
+   [
+    0.65,
+    "Dor que desce pelo braço do lado para onde a cabeça virou = positivo"
+   ],
+   [
+    0.9,
+    "Depois, tração delicada para aliviar"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Elevação da perna estendida: faixas de 0 a 35, 35 a 70 e acima de 70 graus": {
+  "dur": 8000,
+  "fases": [
+   [
+    0,
+    "Decúbito dorsal, joelho estendido; eleve pelo tornozelo"
+   ],
+   [
+    0.12,
+    "0° a 35°: nervo isquiático ainda frouxo"
+   ],
+   [
+    0.42,
+    "35° a 70°: raízes L5, S1 e S2 tensionadas; dor radicular aqui = positivo"
+   ],
+   [
+    0.72,
+    "Acima de 70°: não há mais deformação do nervo; a dor vem de outras estruturas"
+   ],
+   [
+    0.92,
+    "Anote o ângulo em que a dor aparece"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "FABER: flexão, abdução e rotação externa do quadril, pressão do joelho em direção à mesa": {
+  "dur": 7000,
+  "fases": [
+   [
+    0,
+    "Decúbito dorsal (visto de cima), pernas estendidas"
+   ],
+   [
+    0.1,
+    "O quadril é levado à flexão, abdução e rotação externa: tornozelo logo acima do joelho oposto"
+   ],
+   [
+    0.5,
+    "Uma mão fixa a pelve do outro lado"
+   ],
+   [
+    0.6,
+    "A outra pressiona o joelho em direção à mesa"
+   ],
+   [
+    0.85,
+    "Onde dói? Virilha: quadril; região sacroilíaca: essa articulação"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Thomas: quadril oposto em flexão máxima, quadril testado estendido até a mesa": {
+  "dur": 7500,
+  "fases": [
+   [
+    0,
+    "Decúbito dorsal, mão do examinador sob a coluna lombar"
+   ],
+   [
+    0.1,
+    "Os dois quadris são fletidos até a lordose desaparecer"
+   ],
+   [
+    0.35,
+    "O paciente segura o joelho oposto junto ao peito"
+   ],
+   [
+    0.45,
+    "O quadril testado é estendido devagar"
+   ],
+   [
+    0.85,
+    "Normal: a coxa chega à mesa. Se não chega, o ângulo é a contratura em flexão"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Gaveta anterior: joelho a 90 graus, pé fixo, tíbia puxada para a frente": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Quadril fletido, joelho a 90°, pé apoiado"
+   ],
+   [
+    0.1,
+    "O examinador fixa o pé (senta levemente sobre o antepé)"
+   ],
+   [
+    0.25,
+    "As mãos envolvem a tíbia proximal e a puxam para a frente"
+   ],
+   [
+    0.7,
+    "Desliza para a frente, sem parada firme, mais que o outro lado = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Lachman: joelho em leve flexão, fêmur fixo, tíbia puxada para a frente": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Joelho em leve flexão (15° a 20°)"
+   ],
+   [
+    0.12,
+    "Uma mão fixa o fêmur distal"
+   ],
+   [
+    0.25,
+    "A outra puxa a tíbia proximal para a frente"
+   ],
+   [
+    0.7,
+    "Excursão maior que a do outro lado, sem parada firme = positivo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de McMurray: flexão máxima, rotação externa e valgo, extensão lenta": {
+  "dur": 8000,
+  "fases": [
+   [
+    0,
+    "Joelho em flexão máxima, dedos sobre a interlinha articular"
+   ],
+   [
+    0.12,
+    "Do calcanhar, rotação externa da perna (dedos do pé para fora) e valgo"
+   ],
+   [
+    0.35,
+    "Mantendo a rotação, estenda o joelho devagar até cerca de 90°"
+   ],
+   [
+    0.65,
+    "Estalido sentido ou ouvido na interlinha, ou dor = positivo"
+   ],
+   [
+    0.85,
+    "Repita com rotação interna para o menisco lateral"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Estresse em valgo: joelho empurrado para dentro, tornozelo para fora, abre o lado medial": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Membro inferior direito visto de frente, joelho em leve flexão"
+   ],
+   [
+    0.12,
+    "Uma mão na face lateral do joelho empurra para dentro"
+   ],
+   [
+    0.25,
+    "A outra, na face medial do tornozelo, puxa para fora"
+   ],
+   [
+    0.6,
+    "Dor ou abertura do lado medial = lesão do colateral medial"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Estresse em varo: joelho empurrado para fora, tornozelo para dentro, abre o lado lateral": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Membro inferior direito visto de frente, joelho em leve flexão"
+   ],
+   [
+    0.12,
+    "Uma mão na face medial do joelho empurra para fora"
+   ],
+   [
+    0.25,
+    "A outra, na face lateral do tornozelo, puxa para dentro"
+   ],
+   [
+    0.6,
+    "Dor ou abertura do lado lateral = lesão do colateral lateral"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Apley no joelho direito: compressão e distração em sequência, cabeça à esquerda": {
+  "dur": 14000,
+  "fases": [
+   [
+    0,
+    "Compressão: decúbito ventral, joelho a 90°"
+   ],
+   [
+    0.06,
+    "Apoio no pé: carga axial para baixo"
+   ],
+   [
+    0.18,
+    "Compressão com rotação: pesquisar dor na interlinha"
+   ],
+   [
+    0.42,
+    "Comparar com a distração; teste isolado não confirma lesão"
+   ],
+   [
+    0.5,
+    "Distração: mesma posição, coxa fixada"
+   ],
+   [
+    0.58,
+    "Segurar o tornozelo e tracionar para cima"
+   ],
+   [
+    0.69,
+    "Manter a tração e girar o pé"
+   ],
+   [
+    0.9,
+    "Comparar a dor nas duas modalidades"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ },
+ "Teste de Thompson: compressão da panturrilha, o pé deve fazer flexão plantar": {
+  "dur": 6000,
+  "fases": [
+   [
+    0,
+    "Decúbito ventral, joelho a 90° (planta para cima)"
+   ],
+   [
+    0.12,
+    "O examinador comprime com força a massa da panturrilha"
+   ],
+   [
+    0.35,
+    "Tendão íntegro: o pé faz flexão plantar"
+   ],
+   [
+    0.75,
+    "O pé não se move = ruptura completa do tendão calcâneo"
+   ]
+  ],
+  "comp": "testes",
+  "regioes": ""
+ }
+}

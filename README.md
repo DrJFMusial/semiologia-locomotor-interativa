@@ -1,35 +1,15 @@
-# Semiologia do Sistema Locomotor Interativa
+# Semiologia do Sistema Locomotor · 1.8.1
 
-Prof. João Frederico Musial · Medicina · Centro Universitário Campo Real · E2M08 · 2026/2.
+[Abrir aula](https://drjfmusial.github.io/semiologia-locomotor-interativa/)
 
-Aula estática com apresentação, modo estudo responsivo, tema claro/escuro e simuladores de exame físico. Abra `index.html` ou acesse a página publicada.
+Aula web e offline em arquivo único. Modo claro/escuro, apresentação/estudo, anatomia 3D com alternativa automática em esquemas quando WebGL não está disponível. Use ?2d para desativar o motor. Última tela com acessos às aulas cardiovascular, respiratória e abdominal e direitos autorais.
 
-## Página
+## Construção
 
-https://drjfmusial.github.io/semiologia-locomotor-interativa/
+Instale as dependências de integracao-3d/motor com npm ci. Execute npm run build na raiz. O script recupera a base aprovada 1.6.1 do commit 97641e8ee9dbd192a4a9d853b4727e622fd4910d, integra o motor e aplica os acabamentos de publicação. Necessita do histórico Git contendo esse commit. Também aceita LOCOMOTOR_BASE_HTML para indicar uma cópia da base. Saídas: index.html, dist/index.html e dist-offline/index.html.
 
-## Uso
+npm test executa os testes de cinemática, geometria e cenas. Modelos e licenças: THIRD_PARTY_NOTICES.md e COPYRIGHT.md.
 
-- `?modo=apresentacao`: apresentação com navegação por setas.
-- `?modo=estudo`: leitura contínua e responsiva.
-- Botão de lua/sol na barra: alterna o tema e salva a preferência no navegador. Sem escolha salva, segue o sistema.
-- Imagens e esquemas podem ser ampliados; Esc fecha a ampliação.
-- A última tela reúne autoria, direitos autorais e links para as outras aulas.
+## Limites desta versão
 
-## Conteúdo publicado
-
-O `index.html` é a distribuição completa e autocontida. Imagens, estilos e scripts estão incorporados. Os vídeos locais de marcha não foram publicados, pois sua origem e licença ainda não estão confirmadas; os manequins e a síntese didática foram preservados. Os livros e demais arquivos privados do projeto não integram este repositório.
-
-## Outras aulas
-
-- [Cardiovascular](https://drjfmusial.github.io/semiologia-cardiovascular-interativa/)
-- [Abdominal](https://drjfmusial.github.io/semiologia-abdominal-interativa/)
-- [Respiratória](https://drjfmusial.github.io/semiologia-respiratoria-interativa/)
-
-## Direitos autorais
-
-© 2026 João Frederico Musial. Todos os direitos reservados sobre o conteúdo e os elementos originais, ressalvados os direitos de terceiros e as utilizações legalmente permitidas. Referências e créditos na aula. Consulte COPYRIGHT.md.
-
-## Publicação
-
-GitHub Pages, branch `main`, diretório raiz. Não é necessário instalar dependências ou executar build.
+As 20 imagens dos prompts v6 permanecem pendentes, com esquemas provisórios. As animações são didáticas, não constituem mensuração clínica. A documentação da integração registra aproximações e limitações do atlas. A verificação automatizada usa WebGL por software; desempenho em equipamento de sala deve ser conferido nesse equipamento.

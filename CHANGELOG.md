@@ -1,5 +1,15 @@
 # Histórico de alterações
 
+## 1.8.1 (2026-11-01)
+
+- Integração da aula 1.8.1-exp3d: movimentos, marcha, mobilidade, força, derrame, atlas regional e testes com anatomia 3D; capa em contornos 2D.
+- Modo escuro com contraste das setas e atualização das cenas estáticas na troca de tema.
+- Créditos Z-Anatomy/BodyParts3D e licença das adaptações nas referências, nos direitos e no projeto.
+- Três links para as demais aulas preservados no encerramento.
+- Seta de pressão posterior de Barlow retirada para concordar com o texto aprovado e AAP 2016.
+- As 20 imagens previstas nos prompts v6 ainda usam os esquemas provisórios existentes.
+
+
 ## 1.6.1 (2026-10-31, revisão local de conteúdo)
 
 - L1: entrada única de Finkelstein, texto harmonizado e imagem preservada byte a byte.
